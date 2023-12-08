@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #eee;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1rem;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Floatop</h1>
+        <p>Welcome to our website</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+       
+        <h2>About Us</h2>
+        <p>Welcome to Floatop, where we are dedicated to providing high-quality services with a focus on customer satisfaction. Our team of experts is passionate about what we do, and we strive to exceed our clients' expectations.</p>
+    
+        <p>At Floatop, we believe in innovation and excellence. Our commitment to delivering outstanding results is reflected in every project we undertake. Whether it's designing a website, creating engaging content, or offering top-notch consulting services, we are here to meet your needs.</p>
+    
+        <img src="https://th.bing.com/th/id/R.6c1d7a3acbd1b1d15209faa79b8bda1e?rik=bwFGp%2brJJSwBIw&pid=ImgRaw&r=0" alt="Team at work" style="width: 100%; max-width: 400px; margin: 20px 0;">
+        
+        <p>Our values center around transparency, integrity, and collaboration. We work closely with our clients to understand their goals and tailor our solutions accordingly. With a customer-centric approach, we aim to build long-lasting relationships that go beyond business.</p>
+    
+        <p>Explore the possibilities with Floatop and let us be your partner in success. We look forward to embarking on exciting ventures together.</p>
+   
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+        </ul>
+    </section>
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+        
+            <div style="max-width: 600px; margin: 0 auto;">
+                <p>If you have any questions or would like to discuss a project, feel free to get in touch with us. We're here to help!</p>
+        
+                <div style="margin-bottom: 20px;">
+                    <strong>Address:</strong>
+                    <p>Floatop Street, City, Country</p>
+                </div>
+        
+                <div style="margin-bottom: 20px;">
+                    <strong>Email:</strong>
+                    <p><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+                </div>
+        
+                <div style="margin-bottom: 20px;">
+                    <strong>Phone:</strong>
+                    <p>(123) 456-7890</p>
+                </div>
+        
+                <!-- Contact Form (Replace with your actual form code) -->
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+
+
+    <footer>
+        <p>&copy; 2023 Floatop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
